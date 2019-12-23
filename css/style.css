@@ -1,0 +1,707 @@
+:root {
+  --rojo-principal: rgb(216, 61, 61);
+  --plomo: #1f191b;
+}
+::selection {
+  background-color: rgb(219, 66, 61);
+}
+* {
+  font-family: 'Monserrat', sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.titulo {
+  font-family: 'Bree Serif', serif;
+  text-align: center;
+  font-size: 2em;
+}
+
+/*---------------------*/
+/* HEADER INICIO */
+/*---------------------*/
+.container-header {
+  background-image: url(../img/Seguridad-electronica_slide_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.container-header .container-oscuro {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.7);
+  position: absolute;
+}
+.container-header .container-oscuro .container-logo {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+} 
+.container-header .container-oscuro .container-logo img {
+  width: 200px;
+}
+.container-menu {
+  position: fixed;
+  width: 100%;
+  margin-top: 5px;
+  /* background-color: rgb(194, 40, 40); */
+}
+/* Aqui doy estilos a todos los menus de la pagina INICIO*/
+.container-menu .menu{
+  text-align: center; 
+  margin: 0;
+  /* padding-right: 200px; */
+}
+.container-menu .menu li{ 
+  display: inline-block;
+  padding: 15px 0;
+  transition: .5s;
+}
+.container-menu .menu li .list-item{ 
+  color: #FFF;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 15px;
+  font-family: 'Bree Serif', serif;
+}
+.container-menu .menu li:hover {
+  background-color: var(--rojo-principal);
+  transform: translateY(15px);
+}
+/* Aqui doy estilos a todos los menus de la pagina FIN*/
+
+.container-header .container-oscuro .container-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.container-header .container-oscuro .container-info h1{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+.container-header .container-oscuro .container-info h1 span{
+  color: var(--rojo-principal);
+  display: none;
+  font-family: 'Poppins', sans-serif;
+}
+/*---------------------*/
+/* HEADER FIN */
+/*---------------------*/
+
+/*---------------------*/
+/* NOSOTROS INICIO */
+/*---------------------*/
+.container-nosotros {
+  margin: 50px 0;
+}
+.container-nosotros .nosotros{
+  text-align: center;
+}
+.container-nosotros .nosotros p {
+  color: var(--rojo-principal);
+  font-family: 'Bree Serif', serif;
+}
+/*Estilos globales para los botones INICIO*/
+.button {
+  background-color: var(--plomo);
+  padding: 10px 0;
+  outline: none;
+  border: none;
+  transition: .3s;
+  user-select: none;
+}
+.button a{
+  padding: 15px 40px;
+  text-decoration: none;
+  font-family: 'Bree Serif', serif;
+  font-size: 1.3em;
+  color: var(--rojo-principal);
+  transition: .3s;
+}
+.button:hover {
+  background-color: var(--rojo-principal);
+}
+.button:hover a {
+  color: var(--plomo);
+}
+/*Estilos globales para los botones FIN*/
+
+/*---------------------*/
+/* NOSOTROS FIN */
+/*---------------------*/
+
+/*---------------------*/
+/* SEPARADOR INICIO */
+/*---------------------*/
+.container-bienvenida {
+  background-image: url(../img/slider-seguridad-ip_4101.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.container-bienvenida h2 {
+  width: 50%;
+  margin: 30px auto;
+  font-size: 1.8em;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: white;
+}
+.container-bienvenida span {
+  font-family: 'Poppins', sans-serif;
+  color: var(--rojo-principal);
+}
+/*---------------------*/
+/* SEPARADOR FIN */
+/*---------------------*/
+
+/*---------------------*/
+/* SERVICIOS INICIO */
+/*---------------------*/
+.container-servicios .servicios{
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 20px;
+}
+.container-servicios .servicios .container-info {
+  margin-top: 30px;
+  margin-left: 50px;
+  width: 30%;
+  text-align: center;
+}
+.container-servicios .servicios .container-info h1{
+  width: 90%;
+  padding: 0 30px 20px 30px;
+  border-bottom: 3px dotted var(--rojo-principal);
+  margin-bottom: 30px;
+  color: gray;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+.container-servicios .servicios .container-info p{
+  margin-bottom: 30px;
+  color: var(--rojo-principal);
+  font-family: 'Bree Serif', serif;
+}
+
+.container-servicios .servicios .container-img {
+  display: flex; 
+  width: 30%;
+  justify-content: space-around;
+}
+.container-servicios .servicios .container-img figure {
+  width: 180px;
+  height: 190px;
+  overflow: hidden;
+  margin: 0 15px 20px 15px;
+}
+.container-servicios .servicios .container-img figure img{
+  width: 100%; 
+}
+/*---------------------*/
+/* SERVICIOS FIN */
+/*---------------------*/
+
+/*---------------------*/
+/* MAPA INICIO */
+/*---------------------*/
+.mapa-container {
+  line-height: 0;
+  position: relative;
+  text-align: center;
+}
+.mapa-container .info-container {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.7);
+  display: flex;
+  transition: .4s ease all;
+}
+.mapa-container .info-container .sombra {
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+.mapa-container .info-container .caja {
+  line-height: 1.5;
+  background-color: #000;
+  padding: 50px 25px;
+  margin-bottom: 90px;
+  transition: .4s ease all;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.mapa-container .info-container .sombra .caja {
+  color: white;
+}
+.mapa-container .info-container .sombra .caja h1{
+  font-weight: 400;
+  width: 60%;
+  text-transform: uppercase;
+  margin: auto;
+  color: var(--rojo-principal);
+  padding: 10px 20px;
+  border-bottom: 2px dotted var(--rojo-principal);
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+ }
+.mapa-container .info-container .sombra .caja p{
+  font-size: 1.1em;
+  font-family: 'Bree Serif', serif;
+}
+.mapa-container .info-container .sombra .caja p:first-of-type{
+  margin-bottom: 10px;
+}
+.mapa-container .info-container .sombra button{
+  border: 2px solid var(--rojo-principal);
+  background-color: transparent;
+  color: white;
+  height: 40px;
+  width: 250px;
+  font-size: .9em;
+  font-weight: 200;
+  cursor: pointer;
+  transition: .4s ease all;
+  outline: none;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mapa-container .info-container .sombra button:hover{
+  color: var(--rojo-principal);
+}
+/* Mapa visible*/
+.mapa-container .info-0 {
+  height: 0;
+  line-height: 0;
+}
+.mapa-container .info-container .info-0 {
+  line-height: 0;
+  height: 0;
+  transform: translateY(-180%);
+}
+.mapa-container .info-container .sombra .button-on {
+  top: 30px;
+  background-color: var(--plomo);
+  border: 2px solid var(--plomo);
+}
+/*---------------------*/
+/* MAPA FIN */
+/*---------------------*/
+
+/*---------------------*/
+/* FIN DE LA PAGINA PRINCIPAL */
+/*---------------------*/
+
+
+/*---------------------*/
+/* INICIO DE LA PAGINA DE SERVICIOS */
+/*---------------------*/
+.menu-serv {
+  /* position: absolute; */
+  right: 50%;
+  margin-top: 0;
+  /* background-color: var(--rojo-principal);
+  width: 30%; */
+  margin: auto;
+  transform: translateX(50%);
+}
+.menu-serv .menu {
+  padding: 0;
+}
+.menu-servicios {
+  /* background-color: var(--rojo-principal); */
+  font-size: 1em;
+}
+/*---------------------*/
+/* SERVICIOS - CATEGORIAS INICIO */
+/*---------------------*/
+.section-servicios {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin-top: 50px; */
+  background-image: url(../img/Sistemas-de-seguridad-en-tu-casa.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.section-servicios .sombra, header .sombra{
+  width: 100%;
+  background-color: rgba(0,0,0,.6);
+}
+.section-servicios h1 {
+  font-size: 2.3em;
+  font-family: 'Poppins', serif;
+  font-weight: bold;
+  margin-top: 90px;
+  /* color: white; */
+}
+.section-servicios h1 span{ 
+  font-family: 'Poppins', serif;
+  letter-spacing: 1px;
+  color: var(--rojo-principal);
+}
+
+/* Categorias INICIO */
+.categorias-titulo {
+  text-align: center;
+}
+.categorias-titulo h1 {
+  display: inline-block;
+  color: gray;
+  font-weight: 500;
+  font-size: 40px;
+  margin-top: 0;
+}
+.contenido-categorias {
+  max-width: 1200px;
+  width: 100%;
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.categorias-inferior {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.contenido-categorias h2 {
+  margin: 0 0 30px 10px;
+}
+.camaras-alarmas {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.camaras-alarmas a {
+  width: 49.7%;
+  text-decoration: none;
+  color: white;
+}
+.camaras, .alarmas {
+  width: 100%;
+  height: 370px;
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.camaras-titulo {
+  width: 49%;
+}
+.alarmas-titulo {
+  width: 49%;
+  margin-left: 15px;
+}
+.titu {
+  background-color: var(--rojo-principal);
+}
+.pararrayos h2 {
+  padding: 30px 0 0 8px;
+}
+.camaras-titulo, .alarmas-titulo, .gps-titulo, .insta-titulo {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.categoria-image-1, .categoria-image-2{
+  width: 49%;
+  height: 100%;
+}
+.categoria-image-1, .categoria-image-2, .categoria-image-3, .categoria-image-4, .categoria-image-5, .categoria-image-6 {
+  transition: 0.5s;
+  background-position: center;
+}
+.categoria-image-1 {
+  background-image: url(../img/camara.jpg);
+  margin-left: 15px;
+  background-position: -200px -80px;
+  background-size: 700px;
+}
+.categoria-image-2 {
+  background-image: url(../img/alarma.jpg);
+  background-position: -140px -50px;
+  background-size: 600px;
+}
+.categoria-image-3 {
+  background-image: url(../img/gps.jpg);
+  background-position: -30px 0;
+  background-size: 450px;
+}
+.categoria-image-4 {
+  background-image: url(../img/pozo-a-tierra2.jpg);
+  background-position: -210px -100px;
+  background-size: 750px;
+}
+.categoria-image-5 {
+  background-image: url(../img/portada-camaras-seguridad-e1559641520766-565x350.jpg);
+  background-position-x: 300px;
+  background-size: 450px;
+}
+.categoria-image-6 {
+  background-image: url(../img/pararrayos.jpg);
+  margin-bottom: 15px;
+  background-position-x: -150px;
+  background-size: 550px;
+}
+.pararrayos {
+  width: 24%;
+  display: inline-flex;
+}
+.pararrayos a {
+  color: white;
+  width: 100%;
+  text-decoration: none;
+}
+.categoria-image-6, .pararrayos-titulo {
+  height: 352px;
+  width: 100%;
+}
+.camaras:hover article, .alarmas:hover article {
+  background-position-y: 0;
+  transition: 0.5s;
+}
+.pararrayos:hover article {
+  background-position-y: 0;
+  transition: 0.5s;
+}
+.gps, .pozo, .insta {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.gps, .pozo {
+  margin-bottom: 15px;
+}
+.gps-pozo-insta {
+  width: 74.65%;
+}
+.categoria-image-3, .categoria-image-4, .categoria-image-5 {
+  width: 32.3%;
+  height: 230px;
+}
+.gps-titulo, .pozo-titulo, .insta-titulo {
+  width: 66.3%;
+  margin-left: 15px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.pozo-titulo {
+  margin: 0;
+  margin-right: 15px;
+}
+.gps-pozo-insta a {
+  color: white;
+  text-decoration: none;
+}
+.gps:hover article, .pozo:hover article, .insta:hover article {
+  width: 65%;
+  background-position-x: 1px;
+  transition: 0.7s;
+}
+.pozo:hover article {
+  background-position-x: -130px;
+}
+.insta:hover article {
+  background-position-x: 450px;
+}
+.alarmas-a {
+  margin-left: 15px;  
+}
+/* Categorias FIN */
+/*---------------------*/
+/* SERVICIOS - CATEGORIAS FIN */
+/*---------------------*/
+/*---------------------*/
+/* FIN DE LA PAGINA DE SERVICIOS */
+/*---------------------*/
+
+/*---------------------*/
+/* INICIO DE LA PAGINA DE CONTACTO */
+/*---------------------*/
+
+.contacto-header {
+  background-image: url(../img/contacto.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 40vh;
+  position: relative;
+}
+.contacto-header .sombra {
+  width: 100%;
+  background-color: rgba(0,0,0,.6);
+  height: inherit;
+}
+.container-header .menu-cont {
+  background-color: transparent;
+  position: fixed;
+}
+.container-header .menu-cont .menu .menu-contacto{
+  background-color: transparent;
+}
+.contacto-header h1{
+  color: var(--rojo-principal);
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+  font-size: 2.5em;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: rgb(0,0,0);
+}
+.container-contacto .contacto {
+  width: 80%;
+  padding: 20px;
+}
+.contacto h2 {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  color: var(--rojo-principal);
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.contacto .row100 {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  grid-gap: 20px;
+}
+.contacto .row100 .col {
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  margin: 30px 0 10px;
+  transition: .5s;
+}
+.contacto .row100 .inputBox {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: var(--rojo-principal);
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+.contacto .row100 .inputBox input,
+.contacto .row100 .inputBox.textarea textarea{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0 10px;
+  z-index: 1;
+  color: #000;
+}
+.contacto .row100 .inputBox .text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  display: block;
+  transition: .5s;
+  pointer-events: none;
+}
+.contacto .row100 .inputBox input:focus + .text,
+.contacto .row100 .inputBox input:valid + .text{
+  top: -35px;
+  left: -10px;
+}
+.contacto .row100 .inputBox .line{
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--rojo-principal);
+  transition: .5s;
+  border-radius: 2px;
+  pointer-events: none;
+}
+.contacto .row100 .inputBox input:focus ~ .line,
+.contacto .row100 .inputBox input:valid ~ .line{
+  height: 100%;
+}
+.contacto .row100 .inputBox.textarea{
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 10px 0;
+}
+.contacto .row100 .inputBox.textarea textarea{
+  height: 100%;
+  resize: none;
+}
+.contacto .row100 .inputBox textarea:focus + .text,
+.contacto .row100 .inputBox textarea:valid + .text{
+  top: -35px;
+  left: -10px;
+}
+.contacto .row100 .inputBox textarea:focus ~ .line,
+.contacto .row100 .inputBox textarea:valid ~ .line{
+  height: 100%;
+}
+input[type="submit"] {
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background: var(--rojo-principal);
+  color: #000;
+  font-size: 18px;
+  border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------*/
+/* FIN DE LA PAGINA DE CONTACTO */
+/*---------------------*/
+
+
+
